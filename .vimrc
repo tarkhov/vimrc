@@ -6,17 +6,16 @@ if !exists('g:vscode')
     Plug 'digitaltoad/vim-pug'
     Plug 'leafgarland/typescript-vim'
     Plug 'genoma/vim-less'
-    Plug 'captbaritone/better-indent-support-for-php-with-html'
+    " Plug 'captbaritone/better-indent-support-for-php-with-html'
     Plug 'scrooloose/nerdtree'
     Plug 'itchyny/lightline.vim'
     Plug 'scrooloose/nerdcommenter'
-    Plug 'majutsushi/tagbar'
+    Plug 'preservim/tagbar'
     Plug 'google/vim-searchindex'
     Plug 'tpope/vim-surround'
     Plug 'junegunn/vim-slash'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ryanoasis/vim-devicons'
-    " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     call plug#end()
 
     if !has('nvim')
@@ -129,9 +128,7 @@ if !exists('g:vscode')
 
     " Ctags
     "autocmd FileType javascript,php,python,typescript call ctags#find()
-
+    
     " Prettier
     command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
-    let g:python3_host_prog = expand('/usr/bin/python3')
 endif
