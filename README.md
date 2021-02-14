@@ -1,2 +1,2 @@
-# vimrc
+# VimRC
 Vim runtime configuration.
